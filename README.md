@@ -2,11 +2,10 @@
 
 ## Overview
 
- This codebase implements and evaluates the proposed dense-IoT low-power synchronous-flooding protocol, along with five standard baselines (Glossy, LWB, Crystal, Chaos, Splash).
+This codebase implements and evaluates the proposed dense-IoT low-power synchronous-flooding protocol, along with five standard baselines (Glossy, LWB, Crystal, Chaos, Splash).
 
 ## File Structure
 
-```
 iot_sim/
 ├── config.py           # All hyperparameters & hardware constants
 ├── dataset_loader.py   # Intel Lab + CRAWDAD dataset loaders & template extraction
@@ -15,23 +14,18 @@ iot_sim/
 ├── baselines.py        # Glossy / LWB / Crystal / Chaos / Splash models
 ├── simulation.py       # Main experiment runner → writes results/*.csv
 
-
-```
-
 ## Dataset Setup
 
 ### 1. Intel Berkeley Research Lab Sensor Data
-
 
 # Download and decompress
 wget http://db.csail.mit.edu/labdata/data.txt.gz
 gunzip data.txt.gz
 
 # Add CSV header and move to datasets/
-echo "date,time,epoch,moteid,temperature,humidity,light,voltage" \
+echo "date, time, epoch,moteid, temperature, humidity, light, voltage" \
   > datasets/intel_lab_data.csv
 cat data.txt >> datasets/intel_lab_data.csv
-
 
 ### 2. CRAWDAD Zigbee Smart-Home
 
@@ -39,24 +33,18 @@ cat data.txt >> datasets/intel_lab_data.csv
 2. Create a free IEEE account and download the dataset
 3. Save as `datasets/crawdad_zigbee.csv`
 
-> Note: If either dataset file is absent the simulator automatically
+> Note: If either dataset file is absent, the simulator automatically
 > substitutes synthetic white-noise fluctuation templates with a warning,
 > so all experiments still run correctly.
 
 ## Installation
 
-
 pip install numpy pandas scipy matplotlib
-
 
 ## Running
 
-
 # Run all 6 experiments (30 seeds × 20 epochs each, ~5–15 min)
 python simulation.py
-
-
-
 
 ## Key Parameters (config.py)
 
@@ -73,7 +61,6 @@ python simulation.py
 | `W_P/W_R/W_H/W_D` | 0.35/0.20/0.30/0.15 | Forwarder score weights |
 
 ## Simulation Architecture
-
 
 dataset_loader  →  fluctuation templates u_ij(t)
                               ↓
