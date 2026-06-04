@@ -3,7 +3,7 @@
 ## Overview
 
 This codebase implements and evaluates the proposed dense-IoT low-power
-synchronous-flooding protocol described in the paper, along with five
+synchronous-flooding protocol, along with five
 standard baselines (Glossy, LWB, Crystal, Chaos, Splash).
 
 ## File Structure
