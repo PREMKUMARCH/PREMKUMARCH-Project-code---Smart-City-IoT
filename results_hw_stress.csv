@@ -1,0 +1,4 @@
+Profile,Timing uncertainty,Extra turnaround,Buffer budget,E_b (mJ/KB),T_c (ms),P_d (%),G_p (KB/s)
+Nominal node model,+-0.5 us,0 us,8 packets,43.8,55.2,99.7,2.536
+Constrained node model,+-1.0 us,64 us,6 packets,43.8,55.2,99.7,2.536
+Stressed node model,+-2.0 us,128 us,4 packets,43.8,55.2,99.7,2.536

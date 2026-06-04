@@ -1,0 +1,5 @@
+Configuration,E_b (mJ/KB),T_c (ms),P_d (%),G_p (KB/s),ATC (ms)
+Without LSF (coarser epoch timing),43.8,55.2,99.7,2.536,26.8
+Without TCR (all eligible forwarders),38.13,52.0,99.8,2.518,25.2
+Without SF-NACK (fixed repetition),28.69,40.0,99.4,2.524,27.7
+Full method,43.8,55.2,99.7,2.536,26.8

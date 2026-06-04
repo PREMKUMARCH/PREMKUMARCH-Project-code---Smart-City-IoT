@@ -1,0 +1,4 @@
+Profile,"(w_p,w_r,w_h,w_d)",E_b (mJ/KB),P_d (%),G_p (KB/s)
+Reliability-leaning,"(0.45,0.2,0.25,0.1)",25.51,99.9,2.541
+Balanced default,"(0.35,0.2,0.3,0.15)",43.8,99.7,2.536
+Sparsity-leaning,"(0.3,0.15,0.25,0.3)",5677.4,2.6,0.062
